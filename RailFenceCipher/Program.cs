@@ -34,7 +34,7 @@ using NUnit.Framework; //test classes need to have the using statement
 ///     BE SURE TO CREATE AT LEAST TWO TESTS FOR YOUR CODE IN THE TEST CLASS
 ///     One test for a valid entry, one test for an invalid entry.
 
-namespace DailyProgrammer_Template
+namespace RailFenceCypher
 {
     class Program
     {
@@ -67,10 +67,10 @@ namespace DailyProgrammer_Template
             return inputInteger;
         }
     }
-    
-   /// <summary>
-   /// Class that is responsible for encryption of a string
-   /// </summary>
+
+    /// <summary>
+    /// Class that is responsible for encryption of a string
+    /// </summary>
     class RailFenceEnc
     {
         //creating a list of strings that will hold encrypted letters. Strings are corresponding to rows for encryption
@@ -122,7 +122,7 @@ namespace DailyProgrammer_Template
                     //adding a letter to apropriate string in the list of strings according to counter value
                     this.ListOfStrings[counter] += inputString[i];
                     //checking if we reached the last row
-                    if (counter == this.NumberOfRows-1)
+                    if (counter == this.NumberOfRows - 1)
                     {
                         //if we reached the last row, then changing direction and starting decrementing the counter
                         direction = "down";
@@ -152,7 +152,7 @@ namespace DailyProgrammer_Template
                         counter--;
                     }
                 }
-                
+
             }
             //joining all strings from the list and returning a full encrypted string
             return string.Join("", this.ListOfStrings.Select(x => x));
@@ -338,7 +338,7 @@ namespace DailyProgrammer_Template
                     //adding a letter to apropriate string in the list of strings according to counter value
                     this.ListOfStrings[counter] += inputString[i];
                     //checking if we reached the last row
-                    if (counter == this.NumberOfRows-1)
+                    if (counter == this.NumberOfRows - 1)
                     {
                         //if we reached the last row, then changing direction and starting decrementing the counter
                         direction = "down";
@@ -637,63 +637,63 @@ namespace DailyProgrammer_Template
             //return string.Join("", returnString.Select(x => x));
         }
     }
-        
-        //MY ORIGINAL ALGORITHM  
-        /// <summary>
-        /// I created this function just as initial algorithm for railfence encryption
-        /// </summary>
-        /// <param name="input">String to be encrypted</param>
-        //public static void RailFenceEnc(string input)
-        //{
-        //    string one = string.Empty;
-        //    string two = string.Empty;
-        //    string three = string.Empty;
-        //    int counter1 = 1;
-        //    string counter2 = "up";
-        //    for (int i = 0; i < input.Length; i++)
-        //    {
-        //        if (counter2 == "up")
-        //        {
-        //            if (counter1 == 1)
-        //            {
-        //                one = one + input[i];
-        //                //counter1 = 2;
-        //                counter1++;
-        //            }
-        //            else if (counter1 == 2)
-        //            {
-        //                two = two + input[i];
-        //                //counter1 = 3;
-        //                counter1++;
-        //            }
-        //            else if (counter1 == 3)
-        //            {
-        //                three = three + input[i];
-        //                //counter1 = 2;
-        //                counter1--;
-        //                counter2 = "down";
-        //            }
-        //        }
-        //        else if (counter2 == "down")
-        //        {
-        //            if (counter1 == 2)
-        //            {
-        //                two = two + input[i];
-        //                //counter1 = 1;
-        //                counter1--;
-        //            }
-        //            else if (counter1 == 1)
-        //            {
-        //                one = one + input[i];
-        //                //counter1 = 2;
-        //                counter1++;
-        //                counter2 = "up";
-        //            }
-        //        }
-        //    }
-        //    Console.WriteLine(string.Join("", one, two, three));
 
-        //}
+    //MY ORIGINAL ALGORITHM  
+    /// <summary>
+    /// I created this function just as initial algorithm for railfence encryption
+    /// </summary>
+    /// <param name="input">String to be encrypted</param>
+    //public static void RailFenceEnc(string input)
+    //{
+    //    string one = string.Empty;
+    //    string two = string.Empty;
+    //    string three = string.Empty;
+    //    int counter1 = 1;
+    //    string counter2 = "up";
+    //    for (int i = 0; i < input.Length; i++)
+    //    {
+    //        if (counter2 == "up")
+    //        {
+    //            if (counter1 == 1)
+    //            {
+    //                one = one + input[i];
+    //                //counter1 = 2;
+    //                counter1++;
+    //            }
+    //            else if (counter1 == 2)
+    //            {
+    //                two = two + input[i];
+    //                //counter1 = 3;
+    //                counter1++;
+    //            }
+    //            else if (counter1 == 3)
+    //            {
+    //                three = three + input[i];
+    //                //counter1 = 2;
+    //                counter1--;
+    //                counter2 = "down";
+    //            }
+    //        }
+    //        else if (counter2 == "down")
+    //        {
+    //            if (counter1 == 2)
+    //            {
+    //                two = two + input[i];
+    //                //counter1 = 1;
+    //                counter1--;
+    //            }
+    //            else if (counter1 == 1)
+    //            {
+    //                one = one + input[i];
+    //                //counter1 = 2;
+    //                counter1++;
+    //                counter2 = "up";
+    //            }
+    //        }
+    //    }
+    //    Console.WriteLine(string.Join("", one, two, three));
+
+    //}
 
 
     //class String
@@ -710,7 +710,7 @@ namespace DailyProgrammer_Template
     //    }
     //}
 
-#region " TEST CLASS "
+    #region " TEST CLASS "
 
     //We need to use a Data Annotation [ ] to declare that this class is a Test class
     [TestFixture]
@@ -751,5 +751,5 @@ namespace DailyProgrammer_Template
         }
 
     }
-#endregion
+    #endregion
 }

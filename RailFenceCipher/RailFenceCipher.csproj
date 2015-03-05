@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D91A3DAC-138D-47C5-9C4B-69C7B0D16CE6}</ProjectGuid>
+    <ProjectGuid>{C8DD0F9B-D6EC-4E38-A9A1-AA956E8E3A7D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DailyProgrammer_Template</RootNamespace>
-    <AssemblyName>DailyProgrammer-Template</AssemblyName>
+    <RootNamespace>RailFenceCipher</RootNamespace>
+    <AssemblyName>RailFenceCipher</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
